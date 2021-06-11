@@ -1,2 +1,2 @@
-web: gunicorn index:watsabot
+web: gunicorn index:app
 
