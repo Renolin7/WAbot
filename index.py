@@ -11,8 +11,7 @@ def hello():
 
 @app.route("/sms", methods=['POST'])
 def sms_reply():
-    """Respond to incoming calls with a simple text message."""
-    # Fetch the message
+
     msg = request.form.get('Body')
     phone_no = request.form.get('From')
     reply = fetch_reply(msg, phone_no)
